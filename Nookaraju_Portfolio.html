@@ -41,7 +41,7 @@
     .scroll-up-btn.show{bottom:30px;opacity:1;pointer-events:auto;}
     
     /* ---------- Home ---------- */
-    .home{display:flex;height:100vh;min-height:500px;color:#fff;background:url('Images/BBPic.jpg') no-repeat center/cover fixed;background-size:cover;font-family:'Ubuntu',sans-serif;align-items:center;}
+    .home{display:flex;height:100vh;min-height:500px;color:#fff;background:url('./BBPic.jpg') no-repeat center/cover fixed;background-size:cover;font-family:'Ubuntu',sans-serif;align-items:center;}
     .home .max-width{width:100%;}
     .home-content .text-1{font-size:27px;}
     .home-content .text-2{font-size:75px;font-weight:600;}
@@ -174,11 +174,11 @@
     <div class="max-width">
       <h2 class="title">About me</h2>
       <div class="about-content">
-        <div class="left"><img src="Images/My Pic.jpg" alt="Profile"></div>
+        <div class="left"><img src="./My Pic.jpg" alt="Profile"></div>
         <div class="right">
           <div class="text">I'm <b>Nookaraju</b> and I'm a <span class="typing-2"></span></div>
           <p>Hello — I have 2 years of experience in BIM and project delivery. Skilled in accurate Revit modeling, Navisworks coordination, and construction documentation, I support architecture, structure, and MEP workflows to improve clarity and reduce rework.</p>
-          <a href="Images/Resume.pdf" target="_blank">Download CV</a>
+          <a href="./Resume.pdf" target="_blank">Download CV</a>
         </div>
       </div>
     </div>
@@ -226,10 +226,10 @@
         </div>
         <div class="column right">
           <ul>
-            <li><img src="Images/revit.jpg" alt="Revit icon"> Revit</li>
-            <li><img src="Images/autocad.jpg" alt="AutoCAD icon"> AutoCAD</li>
-            <li><img src="Images/navisworks.jpg" alt="Navisworks icon"> Navisworks</li>
-            <li><img src="Images/sketchup.jpg" alt="SketchUp icon"> SketchUp</li>
+            <li><img src="./revit.jpg" alt="Revit icon"> Revit</li>
+            <li><img src="./autocad.jpg" alt="AutoCAD icon"> AutoCAD</li>
+            <li><img src="./navisworks.jpg" alt="Navisworks icon"> Navisworks</li>
+            <li><img src="./sketchup.jpg" alt="SketchUp icon"> SketchUp</li>
           </ul>
         </div>
       </div>
@@ -241,27 +241,27 @@
       <h2 class="title">Selected projects</h2>
       <div class="carousel owl-carousel">
         <div class="card" onclick="openModal('BHGC')">
-          <img src="Images/BHGC Main.jpg" alt="BHGC Project">
+          <img src="./BHGC Main.jpg" alt="BHGC Project">
           <div class="text">BHGC Project</div>
           <p>Interior + Structure BIM models for Prestige, Delhi.</p>
         </div>
         <div class="card" onclick="openModal('MEA')">
-          <img src="Images/Render MEA.jpg" alt="MEA Project">
+          <img src="./Render MEA.jpg" alt="MEA Project">
           <div class="text">MEA Project</div>
           <p>BIM modeling + BOQs for Prestige, Bangalore.</p>
         </div>
         <div class="card" onclick="openModal('BIMCoordination')">
-          <img src="Images/clash.jpg" alt="BIM Coordination">
+          <img src="./clash.jpg" alt="BIM Coordination">
           <div class="text">BIM Coordination</div>
           <p>Clash detection and resolution for project delivery.</p>
         </div>
         <div class="card" onclick="openModal('CADtoBIM')">
-          <img src="Images/cad to bim.jpg" alt="CAD to BIM Conversion">
+          <img src="./cad to bim.jpg" alt="CAD to BIM Conversion">
           <div class="text">CAD to BIM Conversion</div>
           <p>Converting 2D CAD plans into intelligent 3D BIM models.</p>
         </div>
         <div class="card" onclick="openModal('NIMAL')">
-          <img src="Images/NMIAL profile.jpg" alt="NIMAL Project">
+          <img src="./NMIAL profile.jpg" alt="NIMAL Project">
           <div class="text">NIMAL Project</div>
           <p>Coordination & documentation for Adani, Mumbai.</p>
         </div>
@@ -343,49 +343,49 @@
     // Project galleries
     const galleries = {
       BHGC: [
-        { src: 'Images/BHGC Main.jpg', caption: 'BHGC - Comprehensive Exterior Render' },
-        { src: 'Images/BHGC room 2.jpg', caption: 'BHGC - Initial BIM Model Overview' },
-        { src: 'Images/BHGC 3D_2.jpg', caption: 'BHGC - Detailed 3D Section View' },
-        { src: 'Images/BHGC 3d room section.jpg', caption: 'BHGC - Interior Room BIM Model' },
-        { src: 'Images/BHGC corrider.jpg', caption: 'BHGC - Rendered Corridor View' },
-        { src: 'Images/BHGC family r.jpg', caption: 'BHGC - Custom Revit Family for Wardrobe Unit' },
-        { src: 'Images/bhgc 1st room.jpg', caption: 'BHGC - Model and Plan for Room Coordination' },
-        { src: 'Images/BHGC room.jpg', caption: 'BHGC - Detailed BIM Model of a Dining Area' },
-        { src: 'Images/BHGC overall 3d plan.jpg', caption: 'BHGC - Overall 3D BIM Plan' },
-        { src: 'Images/BHGC overall 2d .jpg', caption: 'BHGC - Overall 2D Plan with MEP and Architectural Details' },
-        { src: 'Images/BHGC room R.jpg', caption: 'BHGC - Rendered Guestroom Interior 2' },
-        { src: 'Images/BHGC room 2.jpg', caption: 'BHGC - Rendered Guestroom Interior 3' },
-        { src: 'Images/bhgc room plan2d.jpg', caption: 'BHGC - 2D Plan of Specialty Suites' },
-        { src: 'Images/levels.jpg', caption: 'BHGC - Detailed Section View with Levels and Dimensions' },
-        { src: 'Images/BHGC top &room.jpg', caption: 'BHGC - Split View of Room Render and 2D Plan' },
-        { src: 'Images/sheet preparation.jpg', caption: 'BHGC - Example of a Construction Documentation Sheet' },
-        { src: 'Images/Navieswork.jpg', caption: 'BHGC - Model view in Navisworks' },
-        { src: 'Images/MINI BAR.jpg', caption: 'BHGC - Detail Images of Custom Mini-Bar Design' }
+        { src: './BHGC Main.jpg', caption: 'BHGC - Comprehensive Exterior Render' },
+        { src: './BHGC room 2.jpg', caption: 'BHGC - Initial BIM Model Overview' },
+        { src: './BHGC 3D_2.jpg', caption: 'BHGC - Detailed 3D Section View' },
+        { src: './BHGC 3d room section.jpg', caption: 'BHGC - Interior Room BIM Model' },
+        { src: './BHGC corrider.jpg', caption: 'BHGC - Rendered Corridor View' },
+        { src: './BHGC family r.jpg', caption: 'BHGC - Custom Revit Family for Wardrobe Unit' },
+        { src: './bhgc 1st room.jpg', caption: 'BHGC - Model and Plan for Room Coordination' },
+        { src: './BHGC room.jpg', caption: 'BHGC - Detailed BIM Model of a Dining Area' },
+        { src: './BHGC overall 3d plan.jpg', caption: 'BHGC - Overall 3D BIM Plan' },
+        { src: './BHGC overall 2d .jpg', caption: 'BHGC - Overall 2D Plan with MEP and Architectural Details' },
+        { src: './BHGC room R.jpg', caption: 'BHGC - Rendered Guestroom Interior 2' },
+        { src: './BHGC room 2.jpg', caption: 'BHGC - Rendered Guestroom Interior 3' },
+        { src: './bhgc room plan2d.jpg', caption: 'BHGC - 2D Plan of Specialty Suites' },
+        { src: './levels.jpg', caption: 'BHGC - Detailed Section View with Levels and Dimensions' },
+        { src: './BHGC top &room.jpg', caption: 'BHGC - Split View of Room Render and 2D Plan' },
+        { src: './sheet preparation.jpg', caption: 'BHGC - Example of a Construction Documentation Sheet' },
+        { src: './Navieswork.jpg', caption: 'BHGC - Model view in Navisworks' },
+        { src: './MINI BAR.jpg', caption: 'BHGC - Detail Images of Custom Mini-Bar Design' }
       ],
       MEA: [
-        { src: 'Images/Render MEA.jpg', caption: 'MEA - Rendered View of a Cafe/Dining Area' },
-        { src: 'Images/BOQ_floor.jpg', caption: 'MEA - Sample Bill of Quantities Sheet' },
-        { src: 'Images/MEA 3D.jpg', caption: 'MEA - 3D BIM Model of Building Structure' },
-        { src: 'Images/MEA_3d top.jpg', caption: 'MEA - Top-down 3D View of a Room Model' },
-        { src: 'Images/mea cad.jpg', caption: 'MEA - 2D AutoCAD Floor Plan' },
-        { src: 'Images/mea room 3d.jpg', caption: 'MEA - 3D Wireframe Room Model' }
+        { src: './Render MEA.jpg', caption: 'MEA - Rendered View of a Cafe/Dining Area' },
+        { src: './BOQ_floor.jpg', caption: 'MEA - Sample Bill of Quantities Sheet' },
+        { src: './MEA 3D.jpg', caption: 'MEA - 3D BIM Model of Building Structure' },
+        { src: './MEA_3d top.jpg', caption: 'MEA - Top-down 3D View of a Room Model' },
+        { src: './mea cad.jpg', caption: 'MEA - 2D AutoCAD Floor Plan' },
+        { src: './mea room 3d.jpg', caption: 'MEA - 3D Wireframe Room Model' }
       ],
       BIMCoordination: [
-        { src: 'Images/clash.jpg', caption: 'BIM Coordination - Comprehensive Navisworks Clash Report' },
-        { src: 'Images/clash report.jpg', caption: 'BIM Coordination - Detailed Navisworks Model with Services' },
-        { src: 'Images/clash2.jpg', caption: 'BIM Coordination - Clash Detection Examples' },
-        { src: 'Images/clash2 (2).jpg', caption: 'BIM Coordination - Clash Detection on Door and Column' },
-        { src: 'Images/navis work.jpg', caption: 'BIM Coordination - Navisworks Screenshot with MEP elements' }
+        { src: './clash.jpg', caption: 'BIM Coordination - Comprehensive Navisworks Clash Report' },
+        { src: './clash report.jpg', caption: 'BIM Coordination - Detailed Navisworks Model with Services' },
+        { src: './clash2.jpg', caption: 'BIM Coordination - Clash Detection Examples' },
+        { src: './clash2 (2).jpg', caption: 'BIM Coordination - Clash Detection on Door and Column' },
+        { src: './navis work.jpg', caption: 'BIM Coordination - Navisworks Screenshot with MEP elements' }
       ],
       CADtoBIM: [
-        { src: 'Images/cad to bim.jpg', caption: 'CAD to BIM Conversion - Side-by-Side Comparison' }
+        { src: './cad to bim.jpg', caption: 'CAD to BIM Conversion - Side-by-Side Comparison' }
       ],
       NIMAL: [
-        { src: 'Images/Navi-Mumba-Airport-1.jpg', caption: 'NIMAL - Navi Mumbai International Airport Render' },
-        { src: 'Images/navi-mumbai-airport.jpg', caption: 'NIMAL Project — Clash checks & documentation' },
-        { src: 'Images/NaviMumbaiAirportMasterplan2.jpg', caption: 'NIMAL - Coordination Drawings' },
-        { src: 'Images/NIMAL2.png', caption: 'NIMAL - Clash Detection Results' },
-        { src: 'Images/NIMAL3.png', caption: 'NIMAL - Documentation Sheets' }
+        { src: './Navi-Mumba-Airport-1.jpg', caption: 'NIMAL - Navi Mumbai International Airport Render' },
+        { src: './navi-mumbai-airport.jpg', caption: 'NIMAL Project — Clash checks & documentation' },
+        { src: './NaviMumbaiAirportMasterplan2.jpg', caption: 'NIMAL - Coordination Drawings' },
+        { src: './NIMAL2.png', caption: 'NIMAL - Clash Detection Results' },
+        { src: './NIMAL3.png', caption: 'NIMAL - Documentation Sheets' }
       ]
     };
 
